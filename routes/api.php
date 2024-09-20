@@ -27,5 +27,4 @@ Route::group(['middleware' => 'auth:sanctum'], function() {
 Route::prefix('v1')->group(function () {
     Route::apiResource('tasks', TaskController::class);
 });
-
 });
